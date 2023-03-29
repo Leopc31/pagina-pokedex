@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+.Encabezado{
+    background-color: rgb(185, 124, 43);
+    color: white;
+    display: flex;
+    padding: 15px;
+    margin: 0 15px 0 15px;
+    gap: 5px;
+    border-radius: 10px 10xp 0 0 ;
+}
+.Encabezado figure img{
+    width: 50px;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+    margin: 0 15px 0px 15px;
+    background-color: rgb(223, 224, 142);
+}
+.charizar-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+.title{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px;
+    border-radius: 35px;
+}
+.title figure img{
+    width: 50px;
+    height: 50px;
+}
+.img-charizard img{
+    width: 100%;
+    object-fit: cover;
+}
+.info-pokemon{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+    border-radius: 15px;
+    width: 40%;
+    gap: 20px;
+}
+.row-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row-info{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.title-info{
+    font-size: 20px;
+    color: burlywood;
+    font-weight: 900;
+}
+.info-text{
+    font-size: 22px;
+    color: coral;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+    margin: 0 15px 15px 15px;
+    border-radius: 0 0 15px 15px;
+}
+.footer-container figure img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.footer-container div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 65%;
+}
+.footer-container figure{
+    background-color: burlywood;
+    padding: 15px;
+    border-radius: 10px;
+    border: solid rgb(185, 124, 43);
+    margin: 10px;
+}
+.footer-container figure:hover{
+    background-color: coral;
+    cursor: pointer;
+}
+@media screen and(max-width:700px) {
+    .Encabezado{
+        justify-content: center;
+    }
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .charizar-container{
+        width: 90%;
+        z-index: 2;
+    }
+    .info-pokemon{
+        width: 85%;
+        height: 60vh;
+        transform: translateY(-100);
+        z-index: 1;
+    }
+    .pokeball{
+        display: none;
+    }
+}
